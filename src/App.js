@@ -9,11 +9,13 @@ import MinMax from './components/MinMax';
 import Botao from './components/Botao';
 import Contador from './components/Contador';
 import Pai from './components/indireta/Pai';
+import ContadorV2 from './components/contador/ContadorV2';
 
 export default () => {
   return (
     <View style={style.App}>
-      <Pai />
+      <ContadorV2 />
+      {/* <Pai /> */}
       {/*   <Contador inicial={100} />
      <Botao />
       <Titulo titulo="Titulo principal" subtitulo="Aqui vai o subtitulo" />
