@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 
 import Titulo from './components/Titulo';
 import Primeiro from './components/Primeiro';
@@ -11,12 +11,14 @@ import Contador from './components/Contador';
 import Pai from './components/indireta/Pai';
 import ContadorV2 from './components/contador/ContadorV2';
 import Diferenciar from './components/Diferenciar';
+import Parimpar from './components/Parimpar';
 
 export default () => {
   return (
-    <View style={style.App}>
-      <Diferenciar />
-      {/*  <ContadorV2 />
+    <SafeAreaView style={style.App}>
+      <Parimpar num={3} />
+      {/*  <Diferenciar />
+      <ContadorV2 />
     <Pai /> 
     <Contador inicial={100} />
      <Botao />
@@ -28,7 +30,7 @@ export default () => {
       <Comp1 />
       <Comp2 />
       <Primeiro /> */}
-    </View>
+    </SafeAreaView>
   );
 };
 
