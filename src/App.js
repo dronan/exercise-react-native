@@ -10,13 +10,15 @@ import Botao from './components/Botao';
 import Contador from './components/Contador';
 import Pai from './components/indireta/Pai';
 import ContadorV2 from './components/contador/ContadorV2';
+import Diferenciar from './components/Diferenciar';
 
 export default () => {
   return (
     <View style={style.App}>
-      <ContadorV2 />
-      {/* <Pai /> */}
-      {/*   <Contador inicial={100} />
+      <Diferenciar />
+      {/*  <ContadorV2 />
+    <Pai /> 
+    <Contador inicial={100} />
      <Botao />
       <Titulo titulo="Titulo principal" subtitulo="Aqui vai o subtitulo" />
       <Aleatorio min={1} max={60} />
