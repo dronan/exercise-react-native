@@ -6,12 +6,14 @@ import Primeiro from './components/Primeiro';
 import CompPadrao, {Comp1, Comp2} from './components/Multi';
 import Aleatorio from './components/Aleatorio';
 import MinMax from './components/MinMax';
+import Botao from './components/Botao';
 
 export default () => {
   return (
     <View style={style.App}>
-      <Titulo titulo="Titulo principal" subtitulo="Aqui vai o subtitulo" />
-      {/* <Aleatorio min={1} max={60} />
+      <Botao />
+      {/* <Titulo titulo="Titulo principal" subtitulo="Aqui vai o subtitulo" />
+      <Aleatorio min={1} max={60} />
       <MinMax min={213} max={20} />
       <MinMax min={1} max={94} />
       <CompPadrao />
