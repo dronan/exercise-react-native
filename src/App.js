@@ -8,12 +8,14 @@ import Aleatorio from './components/Aleatorio';
 import MinMax from './components/MinMax';
 import Botao from './components/Botao';
 import Contador from './components/Contador';
+import Pai from './components/direta/Pai';
 
 export default () => {
   return (
     <View style={style.App}>
-      <Contador inicial={100} />
-      {/* <Botao />
+      <Pai />
+      {/*   <Contador inicial={100} />
+     <Botao />
       <Titulo titulo="Titulo principal" subtitulo="Aqui vai o subtitulo" />
       <Aleatorio min={1} max={60} />
       <MinMax min={213} max={20} />
