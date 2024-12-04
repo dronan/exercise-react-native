@@ -1,11 +1,11 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import FlexboxV2 from './components/layout/FlexboxV2';
+import FlexboxV3 from './components/layout/FlexboxV3';
 
 export default () => {
   return (
     <SafeAreaView style={style.App}>
-      <FlexboxV2 />
+      <FlexboxV3 />
     </SafeAreaView>
   );
 };
