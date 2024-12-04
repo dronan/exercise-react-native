@@ -1,11 +1,11 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import DigiteSeuNome from './components/DigiteSeuNome';
+import FlexboxV1 from './components/layout/FlexboxV1';
 
 export default () => {
   return (
     <SafeAreaView style={style.App}>
-      <DigiteSeuNome />
+      <FlexboxV1 />
     </SafeAreaView>
   );
 };
