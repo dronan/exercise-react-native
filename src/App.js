@@ -1,11 +1,11 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import FlexboxV4 from './components/layout/FlexboxV4';
+import Mega from './components/mega/Mega';
 
 export default () => {
   return (
     <SafeAreaView style={style.App}>
-      <FlexboxV4 />
+      <Mega qtdeNumeros={7} />
     </SafeAreaView>
   );
 };
