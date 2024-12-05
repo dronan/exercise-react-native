@@ -12,15 +12,27 @@ export default class Mega extends Component {
     this.setState({qtdeNumeros: +qtde});
   };
 
-  gerarNumeros = () => {
-    const numeros = Array(this.state.qtdeNumeros)
-      .fill()
-      .reduce(n => {
-        const novoNumero = this.gerarNumeroNaoContido(n);
-        return [...n, novoNumero];
-      }, [])
-      .sort((a, b) => a - b);
+  //   gerarNumeros = () => {
+  //     const numeros = Array(this.state.qtdeNumeros)
+  //       .fill()
+  //       .reduce(n => {
+  //         const novoNumero = this.gerarNumeroNaoContido(n);
+  //         return [...n, novoNumero];
+  //       }, [])
+  //       .sort((a, b) => a - b);
 
+  //     this.setState({numeros});
+  //   };
+
+  gerarNumeros = () => {
+    const {qtdeNumeros} = this.state;
+    const numeros = [];
+
+    for (let i = 0; i < qtdeNumeros; i++) {
+      const n = this.gerarNumeroNaoContido(numeros);
+      numeros.push(n);
+    }
+    numeros.sort((a, b) => a - b);
     this.setState({numeros});
   };
 
